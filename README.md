@@ -2,7 +2,9 @@
 Making my portfolio website using angular
 
 ## Prerequisites
-have node and npm installed and up to date
+- install node [https://nodejs.org/en/download](url)
+- install npm 'npm install -g npm' 
+
 
 ## step 1 install Angular CLI
 'npm install -g @angular/cli'
