@@ -14,4 +14,7 @@ Making my portfolio website using angular
 - install angular cli `npm install -g @angular/cli` (probably)
 - install tailwind css and it's dependencies `npm install tailwindcss postcss autoprefixer`
 
-# To run the project
+# To run and stop the app
+- cd into the project `cd portfolio-website`
+- run `ng serve --open` to start the app
+- to stop the app press `ctrl + c`
