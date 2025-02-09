@@ -4,10 +4,42 @@
     <div class="frame_line frame_line-top"></div>
     <div class="frame_line frame_line-bottom"></div>
 </div>
+<header class="siteHeader" id="SiteHeader" style="color: white">
+    <h1 class="siteHeader_title">Nick Webber</h1>
+    <p class="siteHeader_label">Designer & Developer</p>
+    <nav class="siteHeader_nav" style="color: white" x-data>
+        <ol>
+            <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" href="/">Home</a>
+            </li>
+            <li
+                :class="{ 'is-selected': $store.app.currentPath === '/projects/' }"
+            >
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" href="/projects/">Projects</a>
+            </li>
+            <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" href="/info/">Info</a>
+            </li>
+            <li
+                :class="{ 'is-selected': $store.app.currentPath === '/contact/' }"
+            >
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" href="/contact/">Contact</a>
+            </li>
+            <li :class="{ 'is-selected': $store.app.currentPath === '/faq/' }">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" href="/faq/">FAQ</a>
+            </li>
+        </ol>
+    </nav>
+</header>
 <main>
     <div>
         <section class="page" style="display: block; opacity: 1">
-            <div class="page_content home">
+            <div class="home">
                 <p class="home_aboutme">
                     <span
                         >Born in 2003 in Columbus, Ohio. I am a senior at The

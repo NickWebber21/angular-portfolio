@@ -7,13 +7,7 @@ import { ContactComponent } from "./contact/contact.component";
 
 @Component({
   selector: "app-root",
-  imports: [
-    // RouterOutlet,
-    HomeComponent,
-    ProjectsComponent,
-    AboutComponent,
-    ContactComponent,
-  ],
+  imports: [HomeComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
 })
