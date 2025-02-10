@@ -160,12 +160,13 @@ body {
 .siteHeader_title {
     margin: -0.1em 0 0 -0.04em;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .siteHeader_label {
     margin-top: 5px;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .siteHeader_nav {
