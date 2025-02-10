@@ -1,16 +1,22 @@
 import { Component } from "@angular/core";
-// import { RouterOutlet } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { ProjectsComponent } from "./projects/projects.component";
-import { AboutComponent } from "./about/about.component";
-import { ContactComponent } from "./contact/contact.component";
+import { Router, NavigationEnd } from "@angular/router";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: "app-root",
-  imports: [HomeComponent],
   templateUrl: "./app.component.html",
-  styleUrl: "./app.component.css",
+  styleUrls: ["./app.component.css"],
+  standalone: true,
+  imports: [RouterModule],
 })
 export class AppComponent {
-  title = "portfolio-website";
+  currentPath: string = "";
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentPath = event.urlAfterRedirects;
+      }
+    });
+  }
 }

@@ -1,3 +1,33 @@
-<div class="container mx-auto px-4">
-    <app-home></app-home>
+<div class="frame" id="Frame">
+    <div class="frame_line frame_line-left"></div>
+    <div class="frame_line frame_line-right"></div>
+    <div class="frame_line frame_line-top"></div>
+    <div class="frame_line frame_line-bottom"></div>
 </div>
+<header class="siteHeader" id="SiteHeader" style="color: white">
+    <h1 class="siteHeader_title">Nick Webber</h1>
+    <p class="siteHeader_label">Designer & Developer</p>
+    <nav class="siteHeader_nav" style="color: white">
+        <ol>
+            <li [class.is-selected]="currentPath === '/'">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" routerLink="/">Home</a>
+            </li>
+            <li [class.is-selected]="currentPath === '/projects'">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" routerLink="/projects">Projects</a>
+            </li>
+            <li [class.is-selected]="currentPath === '/about'">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" routerLink="/about">About</a>
+            </li>
+            <li [class.is-selected]="currentPath === '/contact'">
+                <div class="_dot">&#x25cf;</div>
+                <a class="_text" routerLink="/contact">Contact</a>
+            </li>
+        </ol>
+    </nav>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>
