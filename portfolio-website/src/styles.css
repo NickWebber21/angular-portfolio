@@ -134,21 +134,6 @@ body {
     min-height: calc(var(--vh, 1vh) * 100);
 }
 
-.home {
-    position: absolute;
-    right: calc(var(--pad) * 2);
-    bottom: calc(var(--pad) * 2);
-    white-space: nowrap;
-}
-
-.home_aboutme {
-    line-height: 1.5;
-}
-
-.home_aboutme span {
-    display: block;
-}
-
 .siteHeader {
     position: fixed;
     z-index: 10;
